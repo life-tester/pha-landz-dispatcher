@@ -25,7 +25,7 @@ I built this script for **my own assets** and tailored it to my needs:
 - I will **never ask you for your Bearer token** or DM you first.
 - **Nothing here is investment advice** — it’s just an automation tool for convenience.
 - I am **not part of the PHA development team**, I am just a player.
-- This code should be run **locally** — never share your Bearer token with anyone.
+- This code should be run **locally or in the Colab** — never share your Bearer token with anyone.
 - I am not responsible for any potential data or asset loss. **Stay safe!**
 - I only use Linux, so I have **not tested this on Windows or Mac** — please test and let me know if instructions need adjustments.
 
@@ -50,13 +50,9 @@ If PHA continues supporting LandZ dispatch, I plan to:
 
 ---
 
-## ⚙️ Requirements
-- Python 3.9 or newer
-- Add Python to PATH during installation (important for Windows users)
-- Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+## Running on Colab
+
+[![Open on Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/life-tester/pha-landz-dispatcher-/blob/main/PHA-Landz-Dispatcher.ipynb)
 
 ---
 
