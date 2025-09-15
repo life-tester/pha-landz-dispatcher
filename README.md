@@ -53,6 +53,12 @@ If PHA continues supporting LandZ dispatch, I plan to:
 ## Running on Colab
 
 [![Open on Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/life-tester/pha-landz-dispatcher/blob/main/PHA-Landz-Dispatcher.ipynb)
+Click the button above to run the **PHA Landz Dispatcher** online. 
+You will still need to get your **Bearer Token** from the Dapp.
+
+📖 **Instructions:**  
+- See the step-by-step guide below in this README to get the Token
+- Or watch this video tutorial: [🎥 Watch on YouTube](https://www.youtube.com/watch?v=2GHkes_nlII)
 
 ---
 
@@ -76,7 +82,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtZWdhdXNlciIsImlhdCI6MTY4ODc0MDA
 
 ---
 
-## 📥 Installation and Setup
+## 📥 Installation and Setup locally
 
 ### Clone Repository
 ```bash
