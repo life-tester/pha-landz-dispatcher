@@ -52,7 +52,7 @@ If PHA continues supporting LandZ dispatch, I plan to:
 
 ## Running on Colab
 
-[![Open on Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/life-tester/pha-landz-dispatcher-/blob/main/PHA-Landz-Dispatcher.ipynb)
+[![Open on Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/life-tester/pha-landz-dispatcher/blob/main/PHA-Landz-Dispatcher.ipynb)
 
 ---
 
