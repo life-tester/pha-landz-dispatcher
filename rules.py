@@ -23,9 +23,8 @@ def create_type_name(type_id: int) -> str:
 
 
 def _primal_rank(primal_type: int) -> int:
-    """Ranking for tie‑breakers when choosing fillers.
-    Prefer Base(1) < Elite(2) < Genesis(0) < unknown.
-    Lower is better.
+    """Ranking para desempate em 'barateza'.
+    Preferir Base(1) < Elite(2) < Genesis(0) < desconhecido.
     """
     return {1: 0, 2: 1, 0: 2}.get(primal_type, 3)
 
@@ -59,8 +58,8 @@ def hero_matches(hero: Hero, mission: BuffMission) -> bool:
 
 
 def find_all_keys(available_heroes: List[Hero], minimum_grade: int) -> List[Hero]:
-    """Return heroes that can act as key heroes (grade >= minimum_grade),
-    sorted to prefer lower grade, then preferred primalType, then lower stars, then tokenId.
+    """Heroes que podem ser key (grade >= minimum_grade),
+    ordenados por **menor grade primeiro**, depois primal mais barato, menos estrelas, tokenId.
     """
     return sorted(
         [hero for hero in available_heroes if hero.grade >= minimum_grade],
@@ -69,7 +68,7 @@ def find_all_keys(available_heroes: List[Hero], minimum_grade: int) -> List[Hero
 
 
 def choose_fillers(available_heroes: List[Hero], count: int) -> List[Hero]:
-    """Pick `count` cheapest fillers (by grade, then preferred primalType, stars, tokenId)."""
+    """Preenche com heróis mais baratos (mesmo critério de ordenação)."""
     return sorted(
         available_heroes,
         key=lambda h: (h.grade, _primal_rank(h.primalType), h.star, h.tokenId),
@@ -77,5 +76,5 @@ def choose_fillers(available_heroes: List[Hero], count: int) -> List[Hero]:
 
 
 def pop_by_ids(pool: List[Hero], token_ids: set[int]) -> List[Hero]:
-    """Return a new list with any heroes whose tokenId is in `token_ids` removed."""
+    """Remove do pool heróis com tokenId em `token_ids`."""
     return [hero for hero in pool if hero.tokenId not in token_ids]

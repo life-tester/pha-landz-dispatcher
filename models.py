@@ -9,7 +9,7 @@ class Hero:
     race: int = -1
     star: int = 0
     primalType: int = -1  # 0 = Genesis, 1 = Base, 2 = Elite
-    createType: int = -1  # Mirror of primalType for logging
+    createType: int = -1  # espelho de primalType para logs
     uid: Optional[int] = None
 
 @dataclass
